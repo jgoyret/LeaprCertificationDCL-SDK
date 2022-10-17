@@ -19,7 +19,7 @@ export async function displayWearable() {
     
     wearable_entity.addComponent(new PlaneShape)
     wearable_entity.addComponent(new Transform({  
-        position: new Vector3(15,1.5,3), 
+        position: new Vector3(14,1.5,6), 
         rotation: Quaternion.Euler(-180,90,0), 
         scale: new Vector3(2,2,2)  
     }))
@@ -34,7 +34,7 @@ export async function displayWearable() {
     text_name.getComponent(TextShape).fontSize = 2       
 
     text_name.addComponent(new Transform({   
-        position: new Vector3(15,3,3),  
+        position: new Vector3(14,3,6),  
         rotation: Quaternion.Euler(0,90,0)     
     }))
     
