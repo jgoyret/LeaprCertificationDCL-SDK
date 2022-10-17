@@ -17,7 +17,6 @@ export async function displayWearable() {
     engine.addEntity(wearable_entity) 
 
     
-
     wearable_entity.addComponent(new PlaneShape)
     wearable_entity.addComponent(new Transform({  
         position: new Vector3(15,1.5,3), 
