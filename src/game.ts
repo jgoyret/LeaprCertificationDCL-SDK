@@ -1,28 +1,20 @@
 
-import { displayWearable } from "./displayWearable";
+import { randomButtons } from "./randomButtons";
+import { printDataTempParis } from "./printDataTempParis";
 import { elevator } from "./elevator";
 import { flotingObject } from "./flotingObject";
-import { printDataTempParis } from "./printDataTempParis";
-import { randomButtons } from "./randomButtons";
+import { displayWearable } from "./displayWearable";
+import { CreateNPC } from "./NPC";
 
-// Base scene
-const baseScene = new Entity()
-baseScene.addComponent(new GLTFShape('models/baseScene.glb'))
-baseScene.addComponent(new Transform())
-engine.addEntity(baseScene)
+const floor = new Entity()
+floor.addComponent(new GLTFShape('models/baseScene.glb'))
+floor.addComponent(new Transform())
+engine.addEntity(floor)
 
 
-randomButtons() // DONE
-printDataTempParis() // DONE
-elevator() // DONE 
-flotingObject() // DONE 
-displayWearable() // DONE 
-// NPC DONE 
-
-// TO DO
-// - Clickable buttons DONE
-// - Showcase a text floating with the temperature in Paris, France. DONE
-// - 1 Elevator
-// - 1 Object floating around in circles
-// - Display an L2 wearable and its name
-// - Include an NPC with a few boxes of dialog
+randomButtons() 
+printDataTempParis() 
+elevator() 
+flotingObject() 
+displayWearable() 
+CreateNPC()

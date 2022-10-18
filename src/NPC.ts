@@ -2,8 +2,9 @@ import { NPC, NPCDelay } from '@dcl/npc-scene-utils'
 import resources from './NPC/resources'
 import { MarshaDialog } from './NPC/dialogData'
 
+export function CreateNPC(){
 
-export const marsha = new NPC(
+  const marsha = new NPC(
     {
       position: new Vector3(11, 1.6, 11),
       rotation: Quaternion.Euler(0, 180, 0)
@@ -55,4 +56,7 @@ marshaRings.addComponent(
   })
 )
 marshaRings.setParent(marsha)
+
+}
+
   
